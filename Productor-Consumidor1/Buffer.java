@@ -18,7 +18,7 @@ public class Buffer {
     public synchronized char consumir(){
         while(this.estaVacia){
             try {
-                System.out.println("Estoy esperando");
+                System.out.println("Un cliente esta esperando");
                 wait();
             } catch (InterruptedException ex) {
                 Logger.getLogger(Buffer.class.getName()).log(Level.SEVERE, null, ex);
@@ -50,7 +50,8 @@ public class Buffer {
         }
         
         siguiente++;
-        System.out.println("Paco ingresa a la estenteria "+siguiente+" pizzas");
+        System.out.println("Paco ingresa a la estenteria una pizza");
+        System.out.println("La estantería tiene:" +siguiente);
         this.estaVacia = false;
 
         if(siguiente == this.buffer.length){
