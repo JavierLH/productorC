@@ -52,6 +52,7 @@ public class Buffer {
         siguiente++;
         System.out.println("Paco ingresa a la estenteria una pizza");
         System.out.println("La estantería tiene:" +siguiente);
+        
         this.estaVacia = false;
 
         if(siguiente == this.buffer.length){
