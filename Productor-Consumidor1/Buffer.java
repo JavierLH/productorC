@@ -1,10 +1,12 @@
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import javax.swing.JOptionPane;
+
 public class Buffer {
 
     private char[] buffer;
-    private int siguiente;
+    public int siguiente;
     private boolean estaVacia;
     private boolean estaLlena;
     

@@ -7,7 +7,6 @@ import java.util.logging.Logger;
 public class Consumidor extends Thread {
 
     private Buffer buffer;
-    private Ventana CV; 
 
     public Consumidor(Buffer b) {
         this.buffer = b;
@@ -19,7 +18,6 @@ public class Consumidor extends Thread {
         while (true) {
             try {
                 buffer.consumir();
-
                 sleep((int) (Math.random() * 6000));
             } catch (InterruptedException ex) {
                 Logger.getLogger(Consumidor.class.getName()).log(Level.SEVERE, null, ex);

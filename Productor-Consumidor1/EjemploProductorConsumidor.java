@@ -5,7 +5,7 @@ public class EjemploProductorConsumidor {
     public static void main(String[] args) {
         
         Ventana miVentana = new Ventana();
-	   //miVentana.setVisible(true);
+	    miVentana.setVisible(true);
         
         Buffer b = new Buffer(10);
         Productor p = new Productor(b);
